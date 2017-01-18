@@ -6,5 +6,7 @@ Aquí puedes encontrar el código fuente de los proyectos que realicemos en nues
 Mi nombre es Raúl Noa Pedroso. Soy un Full Stack Developer, que ama el desarrollo web y móvil. 
 
 Puedes encontrarme y contactar conmigo mediante:
+
 Linkedin: https://www.linkedin.com/in/ra%C3%BAl-noa-pedroso-1026906a
+
 Twitter: https://twitter.com/rsnoa
