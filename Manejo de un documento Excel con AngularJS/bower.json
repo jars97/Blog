@@ -1,0 +1,27 @@
+{
+  "name": "excelangularmanipulation",
+  "authors": [
+    "Raúl Noa <rsnoa@infomed.sld.cu>"
+  ],
+  "description": "Leer, mostrar, modificar y guardar los datos de un documento Excel.",
+  "main": "app.js",
+  "keywords": [
+    "excel",
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "js-xlsx": "^0.8.1",
+    "angular-js-xlsx": "^0.0.2",
+    "file-saver": "^1.3.3"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="App for work with information from the web site Alzashop">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>AngularExcel</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon-alza.ico" />
+
+</head>
+<body ng-cloak ng-app="AngularExcel">
+
+<div ng-controller="AppCtrl">
+    <md-content class="md-padding">
+        <div layout="row" layout-xs="column" layout-align="start center" >
+            <md-content  flex-gt-sm="50"  flex="noshrink">
+                <lf-ng-md-file-input lf-files="files" drag aria-label="fileupload" onread="read"></lf-ng-md-file-input>
+                <div id="drop">Drag & drop files here...</div>
+                <div id="content_file" flex layout="row">
+                    <label flex><ng-md-icon icon="insert_drive_file"></ng-md-icon>{{name}}</label>
+                    <label  class="custom-file-upload">
+                        <ng-md-icon icon="folder"></ng-md-icon>
+                        <js-xls fd-input  accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" class="hidden upload " onread="read" layout-align="center center" onerror="error">
+
+                        </js-xls>
+                        Open excel file
+                    </label>
+                </div>
+            </md-content>
+        </div>
+    </md-content>
+
+    <!--<div layout="row"  layout-xs="column" flex ng-repeat="element in Elements">
+
+            <label>{{element}}</label>
+
+
+
+    </div> -->
+    <table  border="1">
+        <tr ng-repeat="(x, y) in Elements">
+            <td>{{x}}</td>
+            <td>{{y}}</td>
+        </tr>
+    </table>
+</div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/js-xlsx/shim.js"></script>
+    <script src="bower_components/js-xlsx/dist/xlsx.core.min.js"></script>
+    <script src="bower_components/angular-js-xlsx/angular-js-xlsx.js"></script>
+    <script src="bower_components/file-saver/FileSaver.js"></script>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
