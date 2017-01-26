@@ -1,15 +1,3 @@
-#menumore{
-    margin-top: 60px;
-}
-
-.myGrid {
-
-    width: 600px;
-
-    height: 200px;
-
-}
-
 input[type=file].hidden {
     color: transparent;
     border-radius: 0 5px 5px 0;
@@ -33,6 +21,9 @@ input[type=file].hidden {
     background-color: RGBA(0, 103, 221, 0.77);
     border-radius: 5px;
     color: white;
+    float: right;
+    width: 130px;
+    margin: 5px 0px;
 }
 
 #drop{
@@ -53,61 +44,44 @@ input[type=file].hidden {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     border: 1px solid #ddd;
-
+    min-height: 45px;
+    max-height: 100%;
 }
 
 #content_file>label:first-child{
     padding-top: 5px;
     color: rgba(0, 0, 0, 0.32);
     font-weight: bold;
+    padding-top: 10px;
+    display: inline-block;
+
+    width: 69%;
 }
 
 #content_file>label:first-child>ng-md-icon{
     color: black !important;
 }
 
-#alzaimg{
-    text-align: center;
+#inputexcel{
+    width:70%;
+    margin: 0 auto;
 }
 
-#numofproducts{
-    color:blue;
 
+#tableContainer{
+    margin-top: 20px;
 }
 
-#autofill{
-    color:blueviolet;
+
+
+/*Table style*/
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
 }
 
-#notexistentsproducts{
-    color:red;
-}
-
-#procesed{
-    color:green;
-}
-
-#timerDialog{
-    padding: 20px 20px;
-    text-align:center;
-    font-family:Bangers;
-    color:red;
-    font-size:35px;
-    letter-spacing:2px;
-}
-
-.timerText{
-    color: black !important;
-}
-
-.loadingTitle{
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-}
-
-.lineSeparator{
-    border: 0;
-    color: transparent;
-    background: transparent;
+th{
+    background: #2cb2ff;
 }
